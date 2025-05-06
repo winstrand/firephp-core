@@ -2,25 +2,29 @@
 
 class FirePHP_TestWrapper extends FirePHP {
 
-    private $_headers = array();
+    private array $_headers = array();
 
 
-    public function _getHeaders() {
+    public function _getHeaders() : mixed
+    {
         return $this->_headers;
     }
-    public function _getHeader($index) {
+    public function _getHeader(mixed $index) : mixed
+    {
         return $this->_headers[array_slice(array_keys($this->_headers), $index-1, 1)[0]];
     }
-    public function _clearHeaders() {
+    public function _clearHeaders() : void
+    {
         $this->_headers = array();
     }
 
 
     // ######################
     // # Subclassed Methods #
-    // ######################   
+    // ######################
 
-    protected function setHeader($Name, $Value) {
+    protected function setHeader(string $Name, mixed $Value) : void
+    {
 
         preg_match('/(\d+)\|(.+)$/', $Value, $countMatch);
 
@@ -39,12 +43,14 @@ class FirePHP_TestWrapper extends FirePHP {
         }
     }
 
-    protected function headersSent(&$Filename, &$Linenum) {
+    protected function headersSent(string &$Filename, int &$Linenum) : bool
+    {
         return false;
     }
 
-    public function detectClientExtension() {
+    public function detectClientExtension() : bool
+    {
         return true;
     }
-    
+
 }
