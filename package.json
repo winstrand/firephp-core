@@ -1,11 +1,11 @@
 {
-    "uid": "https://github.com/firephp/firephp-core/",
+    "uid": "https://github.com/winstrand/firephp-core/",
     "name": "firephp-core",
     "description": "Minimal library for sending PHP variables to browsers.",
     "repositories": [
         {
             "type": "git",
-            "url": "git://github.com/firephp/firephp-core.git"
+            "url": "git://github.com/winstrand/firephp-core.git"
         }
     ],
     "maintainers": [
@@ -36,6 +36,13 @@
             "email": "sokolov.innokenty@gmail.com",
             "alias": {
                 "github": "qbbr"
+            }
+        },
+        {
+            "name": "Martin Winstrand",
+            "email": "martin.winstrand@gmail.com",
+            "alias": {
+                "github": "winstrand"
             }
         }
     ],
