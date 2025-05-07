@@ -2,6 +2,7 @@
     "name": "firephp/firephp-core",
     "description": "Minimal library for sending PHP variables to browsers.",
     "type": "library",
+    "version": "0.5.4",
     "homepage": "https://github.com/firephp/firephp-core",
     "license": "MIT",
     "authors": [
